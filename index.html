@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple apology, written with my hand.">
+  <title>A Letter for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true"></div>
+  <aside class="rail" aria-hidden="true">
+    <p>あなたへ</p>
+    <span>✦</span><span>○</span><span>∞</span><span>♥</span>
+    <small>FOR YOU<br>WITH SORRY</small>
+  </aside>
+  <main class="page">
+    <section class="intro" id="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">A letter across the universe</p>
+      <h1 id="intro-title">For<br><em>you.</em></h1>
+
+      <button class="envelope" id="openLetter" type="button" aria-controls="letter" aria-expanded="false">
+        <span class="envelope__paper" aria-hidden="true">I’m sorry.</span>
+        <span class="envelope__body" aria-hidden="true"></span>
+        <span class="envelope__flap" aria-hidden="true"></span>
+        <span class="envelope__seal" aria-hidden="true">♥</span>
+        <span class="sr-only">Open the letter</span>
+      </button>
+
+      <p class="hint"><span></span> Touch to open <span></span></p>
+    </section>
+
+    <article class="letter" id="letter" aria-hidden="true">
+      <button class="close" id="closeLetter" type="button" aria-label="Close letter">×</button>
+      <p class="date" id="today"></p>
+      <h2>,</h2>
+
+      <div class="letter__body">
+        <p>I’m sorry.</p>
+        <p>I know those two words cannot undo the hurt I caused, but I need you to know that they come from the deepest, most honest part of me.</p>
+        <p>You mean far too much to me for pride to stand between us. I should have think more carefully, spoken more gently, and speak you in the way in that moment.</p>
+        <p>I cannot promise to be perfect. I can promise to try, to do better, and to keep choosing not only when it is easy, but especially when it is not.</p>
+        <p>If you need time, I understand. I just hope that, when you are ready, you will let me make things right.</p>
+      </div>
+
+      <p class="sign-off">Always yours,<br><span>with all my heart</span></p>
+
+      <div class="reply">
+        <button class="reply__button" id="replyButton" type="button">I read your letter</button>
+        <p class="reply__message" id="replyMessage" aria-live="polite"></p>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
