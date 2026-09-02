@@ -32,8 +32,8 @@ openButton.addEventListener('click', openLetter);
 closeButton.addEventListener('click', closeLetter);
 
 replyButton.addEventListener('click', () => {
-  replyMessage.textContent = 'Thank you. That means more than you know. ♥';
-  replyButton.textContent = 'Letter received';
+  replyMessage.textContent = 'Thank you for reading it. You mean the whole wide world to me. ♡';
+  replyButton.textContent = 'Tiny letter received!';
   replyButton.disabled = true;
 });
 

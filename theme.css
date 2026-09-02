@@ -1,0 +1,25 @@
+/* Soft midnight theme layered over the playful base design. */
+:root { --ink:#eee9f4; --pink:#c77d9b; --dark:#e1a4be; --paper:#131218; --yellow:#4a3d4c; }
+body { color:var(--ink); background:#030305; }
+.sky { background:linear-gradient(90deg,#020204e8,#09080c8c),url('assets/celestial-heart.png') center/cover no-repeat; animation:bg-breathe 12s ease-in-out infinite alternate; }
+.cloud { background:#ddd9e21c; filter:blur(2px); }
+.doodle { color:#ffffff91; text-shadow:0 0 16px #fff; }
+.d2,.d3 { color:#d7c8a8; }
+.sticker { color:#e3b2c7; background:#0d0c11c9; border-color:#a97b91; }
+h1 { color:#f1eaf3; text-shadow:0 0 25px #ffffff2e; }
+h1 span,h2 { color:#e2aac1; }
+.intro>p,.hint { color:#c8bdcc!important; }
+.back { background:#332430; }.front { background:#4b2c3d; }.flap { background:#583244; }
+.paper { color:#e3b2c7; background:#17151b; }.seal { background:#b76587; border-color:#e7cfda; }
+.letter { border-color:#716573; color:#ebe5ef; background-color:#121116; background-image:linear-gradient(#c8b4ce12 1px,transparent 1px); box-shadow:0 20px 60px #000,10px 12px #ffffff0d; }
+.tape { background:#aa927d70; }.close { color:#e3b2c7; background:#211821; border-color:#a76783; }
+.date { color:#958a99; }.promise { color:#f3eaf1; background:#443745; }
+.reply { border-color:#695664; }.reply__button { background:#8f4e6b; border-color:#d49bb3; box-shadow:0 5px #4a2938; }
+.reply__button:hover { box-shadow:0 7px #4a2938; }.reply__message,.sign-off span { color:#e2aac1; }
+.heart-picture { position:relative; margin:28px auto; width:min(310px,90%); padding:8px 8px 13px; border:1px solid #716573; background:#09090b; box-shadow:0 14px 35px #000; transform:rotate(-1.5deg); }
+.heart-picture img { display:block; width:100%; max-height:330px; object-fit:cover; object-position:center 58%; filter:saturate(.7) contrast(1.08); }
+.heart-picture figcaption { padding-top:9px; color:#cfc3d2; text-align:center; font:700 1.2rem Gaegu,cursive; }
+.heart-picture::after { content:'♡'; position:absolute; right:-13px; bottom:-15px; color:#efbfd1; font-size:2.2rem; text-shadow:0 0 12px #fff; }
+.get-well { padding:15px 18px; border-left:3px solid #d19ab2; border-radius:0 12px 12px 0; background:#ffffff08; }
+@keyframes bg-breathe { to { background-position:52% center; filter:brightness(1.12); } }
+@media (prefers-reduced-motion:reduce) { .sky { animation:none; } }
