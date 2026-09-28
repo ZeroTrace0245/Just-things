@@ -1,13 +1,69 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A moonlit anniversary letter for Byeole."><title>One Month, My Love</title>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090c19">
+  <meta name="description" content="A little Hogwarts-inspired birthday adventure made for Byeole.">
+  <title>A Birthday Adventure for Byeole</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=IM+Fell+English:ital@0;1&family=Parisienne&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="pages.css"><link rel="stylesheet" href="arrival-extra.css">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="birthday.css">
 </head>
-<body><div class="scene arrival-scene delivered-scene"><div class="stars"></div><div class="moon"></div><div class="cloud one"></div><div class="cloud two"></div><div class="fog"></div><div class="castle-image"></div><div class="castle"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="moon-rays"></div>
-<header class="masthead"><span>✦</span><p>OUR LITTLE MAGIC</p><small>one month of us</small></header>
-<div class="owl-flight lowkey-owl" id="owlFlight" aria-hidden="true"><div class="owl" id="owl"><div class="wing left"></div><div class="wing right"></div><div class="owl-body"><div class="owl-face"><span class="eye left-eye"></span><span class="eye right-eye"></span><b class="beak"></b></div></div><div class="talons"></div></div></div>
-<main class="delivered-experience"><a class="royal-envelope" href="letter.html" aria-label="Open your one month anniversary letter"><span class="envelope-feather" aria-hidden="true"></span><span class="tiny-feathers" aria-hidden="true">❈　❈　·</span><span class="pressed-crest" aria-hidden="true">H</span><span class="recipient"><strong>For Byeole</strong><em>my favourite person</em><small>With all my love<br>from your secret admirer</small></span><span class="fold fold-top"></span><span class="fold fold-left"></span><span class="fold fold-right"></span><span class="royal-seal">H</span></a><p class="arrival-promise">A little moonlit surprise for our first month.</p></main></div><script src="script.js"></script></body></html>
+<body class="birthday-experience">
+  <main>
+    <section class="chapter chapter-arrival is-active" id="arrival" aria-labelledby="arrivalTitle">
+      <div class="arrival-backdrop" aria-hidden="true"><div class="arrival-stars"></div><div class="arrival-moon"></div><div class="arrival-castle"></div><div class="candle candle-one"></div><div class="candle candle-two"></div><div class="candle candle-three"></div><div class="candle candle-four"></div></div>
+      <header class="experience-heading"><span class="heading-star">✦</span><p id="arrivalTitle">A BIRTHDAY DELIVERY FOR BYEOLE</p><small>from somewhere under the same moon</small></header>
+      <div class="owl-delivery" aria-hidden="true"><div class="delivery-owl"><span class="owl-wing"></span><span class="owl-head">◉‿◉</span><span class="owl-tail">⌁</span></div><span class="owl-trail">✧　·　✦　·</span></div>
+      <div class="envelope-wrap" id="envelopeWrap">
+        <p class="delivery-caption">A letter has arrived…</p>
+        <div class="birthday-envelope" id="birthdayEnvelope">
+          <div class="envelope-back"></div><div class="envelope-letter-peek"></div>
+          <div class="envelope-face"><span class="envelope-address">For Byeole</span><span class="envelope-subtitle">a little birthday magic</span></div>
+          <button class="wax-seal" id="openLetter" type="button" aria-label="Break the wax seal and open your letter">B<span>✦</span></button>
+        </div>
+        <p class="envelope-prompt">Tap the seal to open</p>
+      </div>
+      <div class="chapter-footer">✦ &nbsp; delivered with love &nbsp; ✦</div>
+    </section>
+
+    <section class="chapter chapter-letter" id="letter" aria-labelledby="letterTitle" hidden>
+      <div class="letter-scene" aria-hidden="true"><div class="letter-stars"></div><div class="floating-candle candle-a"></div><div class="floating-candle candle-b"></div><div class="floating-candle candle-c"></div></div>
+      <article class="hogwarts-letter" id="hogwartsLetter">
+        <div class="letter-corner corner-tl">✦</div><div class="letter-corner corner-tr">✦</div><div class="letter-corner corner-bl">✦</div><div class="letter-corner corner-br">✦</div>
+        <div class="letter-crest">✧</div><p class="letter-school">A NOTE FOR MY FAVOURITE PERSON</p><h1 id="letterTitle">My dearest Byeole,</h1>
+        <p>I know birthdays can feel like a lot, so there is no big fuss waiting for you here. No expectations, no need to perform happiness, and absolutely no birthday rules.</p>
+        <p>I just wanted to make you something small and a little magical, because I’m so glad you’re in my life. You make the ordinary feel special just by being you.</p>
+        <p>Take this at your own pace. There’s a tiny, just-for-fun quest, a few memories, and a whole lot of love tucked inside. Today gets to feel like <em>your</em> kind of day.</p>
+        <p class="letter-signoff">Happy birthday, my love.<br><span>Always in your corner</span></p>
+        <button class="primary-button" id="startQuest" type="button">Begin the little birthday quest <span>→</span></button>
+        <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">♫ <span>Turn on a little music</span></button>
+      </article>
+    </section>
+
+    <section class="chapter chapter-quest" id="quest" aria-labelledby="questTitle" hidden>
+      <div class="quest-scene" aria-hidden="true"><div class="quest-stars"></div><div class="quest-moon"></div></div>
+      <div class="quest-panel">
+        <p class="chapter-kicker">A THREE-CHARM CHALLENGE</p><div class="quest-progress" aria-label="Quest progress"><span class="progress-orb is-current"></span><span class="progress-orb"></span><span class="progress-orb"></span></div>
+        <h1 id="questTitle">A tiny bit of brain magic</h1><p class="quest-intro">Three little riddles stand between you and the photo album. Take your time.</p>
+        <div class="riddle-card" id="riddleCard" aria-live="polite"></div>
+        <p class="quest-feedback" id="questFeedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="chapter chapter-album" id="album" aria-labelledby="albumTitle" hidden>
+      <div class="album-scene" aria-hidden="true"><div class="album-stars"></div><div class="album-moon"></div></div>
+      <header class="album-heading"><p class="chapter-kicker">YOUR PRIZE: A LITTLE MEMORY MAGIC</p><h1 id="albumTitle">A little orbit of <span>us</span></h1><p>Seven snapshots, a thousand tiny reasons I love you.</p></header>
+      <section class="memory-slideshow" aria-label="Birthday photo slideshow">
+        <div class="slideshow-photo-wrap"><img class="slideshow-photo" id="slideshowPhoto" src="" alt="A favorite photo" fetchpriority="high"><span class="photo-glint" aria-hidden="true">✧</span></div>
+        <div class="slideshow-caption"><span class="slide-count" id="slideCount">01 / 07</span><p id="slideCaption">A little moment I want to keep.</p></div>
+        <div class="slideshow-controls"><button class="slide-arrow" id="previousPhoto" type="button" aria-label="Previous photo">←</button><button class="slide-play" id="toggleSlideshow" type="button" aria-pressed="true">Ⅱ &nbsp; Pause slideshow</button><button class="slide-arrow" id="nextPhoto" type="button" aria-label="Next photo">→</button></div>
+        <div class="slide-dots" id="slideDots" aria-label="Choose a photo"></div>
+      </section>
+      <section class="spiral-section" aria-labelledby="spiralTitle"><p class="chapter-kicker">LITTLE MOMENTS, AROUND AND AROUND</p><h2 id="spiralTitle">Our memory spiral</h2><div class="spiral-stage"><div class="spiral-orbit" id="spiralOrbit" aria-label="Choose a photo from the spiral"></div><span class="spiral-heart" aria-hidden="true">♡</span></div><p class="spiral-hint">Tap any photo to bring it into the spotlight</p></section>
+      <footer class="album-footer"><p>Happy birthday, Byeole. You are so loved.</p><button class="primary-button replay-button" id="replay" type="button">Read your letter again <span>↶</span></button></footer>
+    </section>
+  </main>
+  <button class="quiet-music" id="quietMusic" type="button" aria-label="Toggle background music" hidden>♫</button>
+  <script src="birthday.js"></script>
+</body>
+</html>
